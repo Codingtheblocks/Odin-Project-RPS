@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+.mogra-regular {
+  font-family: "Mogra", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bagel-fat-one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* * {
+    font-family: "Bagel Fat One"
+} */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps aspect ratio while covering screen */
+    z-index: -1;       /* keeps it behind page content */
+}
+
+.game-container {
+    background: rgb(2, 27, 70);
+    border: 2px solid rgb(0, 224, 146);
+    box-shadow: 2px 5px 5px black;
+    height: 300px;
+    width: 200px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.game-display {
+    /* background: rgb(1, 17, 44); */
+    font-family: "Bagel Fat One";
+    background: linear-gradient(rgb(1, 5, 57), black);
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 20px;
+    width: 190px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.game-result {
+    font-family: "Bagel Fat One";
+    position: absolute;
+    top: 70px;
+    font-size: 11px;
+    color: goldenrod;
+    text-wrap: nowrap;
+}
+
+.game-display > div {
+    color: aliceblue;
+    font-size: 10px;
+    padding: 8px;
+}
+
+
+.game-display > div:nth-child(2) {
+    position: absolute;
+    right: 5px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 50px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons > button {
+    font-family: "Mogra", system-ui;
+    width: 60px;
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(14, 169, 50);
+    border-radius: 1px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 0px black;
+    margin: 3px;
+}
+
+.buttons > button:hover {
+    background-color: rgb(1, 122, 30);
+}
+
+
+.game-display > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-display > div > img {
+    width: 70px;
+    padding: 20px 0px;
+}
+
+.score {
+    font-family: "Bagel Fat One";
+    font-weight: 200;
+    font-size: small;
+    color: goldenrod;
+}
+
+.computerscore {
+    font-family: "Bagel Fat One";
+    font-weight: 200;
+    font-size: .6rem;
+    color: grey;
+}
